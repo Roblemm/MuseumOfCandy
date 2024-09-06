@@ -1,0 +1,97 @@
+body{
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover{
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand{
+    color: #ea1c2c;
+    font-size: 1.5rem;
+}
+#mainNavbar{
+    transition: background-color 500ms;
+    background: rgba(222,192,222,0.2);
+}
+#mainNavbar.scrolled{
+    background: rgb(222,192,222);
+}
+
+#headingGroup span{
+    color: #ea1c2c;
+}
+
+#headingGroup h1{
+    font-weight: 100;
+    font-size: 4rem;
+    transition: all 0.1s ease-in;
+}
+
+.blurb h2{
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p{
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-rows {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+.fadeOut {
+    -webkit-animation: animat_hide 0.8s forwards;
+    animation: animat_hide 0.8s forwards;
+    visibility: visible !important;
+}
+@keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+@keyframes animat_hide{
+    0%{opacity:1}
+    100%{opacity:0;visibility: hidden !important;}
+}
+@-webkit-keyframes animat_hide{
+    0%{opacity:1}
+    100%{opacity:0;visibility: hidden !important;}
+}
+
+@media (max-width: 1250px){
+    #headingGroup h1{
+        font-weight: 100;
+        font-size: 3rem;
+        
+    }
+}
